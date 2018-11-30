@@ -7,7 +7,7 @@ using EmailSenderInterfaces;
 
 namespace EmailSenderImplementation1
 {
-    public class EmailSenderImplementation1 : IEmailSender
+    public class EmailSenderImplementationOne : IEmailSender
     {
         public bool SendEmail(string to, string body)
         {

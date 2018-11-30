@@ -1,5 +1,7 @@
-﻿using System;
+﻿using EmailSenderInterfaces;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +13,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            InterfaceResolver ir=new InterfaceResolver("MyConfig2.txt");
+            try
+            {
+                InterfaceResolver ir = new InterfaceResolver("MyConfig2.txt");
+                IEmailSender ES = ir.Instantiate<IEmailSender>();
+                ES.SendEmail("","");
+
+            }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("pathname errato/i");
+            }
         }
     }
 }

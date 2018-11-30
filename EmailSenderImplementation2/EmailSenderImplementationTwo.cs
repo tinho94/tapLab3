@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EmailSenderImplementation2
 {
-    public class EmailSenderImplementation2 : IEmailSender
+    public class EmailSenderImplementationTwo : IEmailSender
     {
         public bool SendEmail(string to, string body)
         {

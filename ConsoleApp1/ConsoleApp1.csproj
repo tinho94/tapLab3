@@ -50,10 +50,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EmailSenderInterfaces\EmailSenderInterfaces.csproj">
+      <Project>{1CF28E31-D5F7-46DE-B691-2B0581F595FB}</Project>
+      <Name>EmailSenderInterfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TinyDependencyInjectionContainer\TinyDependencyInjectionContainer.csproj">
       <Project>{0E502117-23A2-4657-9792-C7ECD40AFF34}</Project>
       <Name>TinyDependencyInjectionContainer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyConfig2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
