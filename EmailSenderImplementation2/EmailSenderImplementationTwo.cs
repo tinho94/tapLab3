@@ -11,7 +11,7 @@ namespace EmailSenderImplementation2
     {
         public bool SendEmail(string to, string body)
         {
-            Console.WriteLine("EmailSenderImplementation2   SendEmail");
+            Console.WriteLine("EmailSenderImplementation2   SendEmail\nsent:{0}\nto:{1}", to, body);
             return false;
         }
     }
