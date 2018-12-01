@@ -19,7 +19,7 @@ namespace EmailSenderImplementation1
 
         public bool SendEmail(string to, string body)
         {
-            Console.WriteLine("EmailSenderImplementation1 instanceNum={0}   SendEmail\nsent:{1}\nto:{2}",this.instanceNum,to,body);
+            Console.WriteLine("\nEmailSenderImplementation1 instanceNum={0}   SendEmail\nsent:{1}\nto:{2}",this.instanceNum,to,body);
             return false;
         }
     }
