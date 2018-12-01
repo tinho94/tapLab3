@@ -17,7 +17,7 @@ namespace ConsoleApp1
             {
                 InterfaceResolver ir = new InterfaceResolver("MyConfig2.txt");
                 IEmailSender ES = ir.Instantiate<IEmailSender>();
-                ES.SendEmail("","");
+                ES.SendEmail("hello","mattia");
 
             }
             catch (FileNotFoundException)
