@@ -10,7 +10,7 @@ namespace EmailSenderImplementation1
     public class EmailSenderImplementationOne : IEmailSender
     {
         private static int numberOfInstances = 0;
-        private int instanceNum;
+        private readonly int instanceNum;
 
         public EmailSenderImplementationOne()
         {
